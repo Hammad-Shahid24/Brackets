@@ -1,0 +1,29 @@
+<!-- write a program using a closure to track button clicks -->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Button Click Tracker</title>
+</head>
+
+<body>
+    <button id="clickButton">Click me</button>
+    <p id="clickCount">Click count: 0</p>
+
+    <script>
+        function createClickTracker() {
+            let count = 0;
+            return function () {
+                count++;
+                document.getElementById('clickCount').innerText = 'Click count: ' + count;
+            };
+        }
+
+        const button = document.getElementById('clickButton');
+        const trackClick = createClickTracker();
+
+        button.addEventListener('click', trackClick);
+    </script>
+</body>
+
+</html>
