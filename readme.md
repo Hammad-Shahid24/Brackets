@@ -1,1 +1,1 @@
-All tasks have been put in their respestive branches, each branch corresponding to a week, week-1, week-2 etc.
+All Week 1 Tasks are distributed by Days in the above folders.
