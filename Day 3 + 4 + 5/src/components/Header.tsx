@@ -10,7 +10,7 @@ const Header: FC = () => {
   };
 
   return (
-    <nav className="w-full border-b border-1 hover:shadow-lg transition-shadow duration-300 relative">
+    <nav className="w-full bg-white border-b border-1 hover:shadow-lg transition-shadow duration-300 fixed top-0 z-50 md:top-auto md:relative">
       <div className="max-w-screen-2xl mx-auto">
         <div className="px-4 py-3">
           <div className="flex flex-col justify-center md:flex-row md:justify-between">
@@ -84,7 +84,7 @@ const Header: FC = () => {
 
             <div className="flex items-center w-full pt-2 md:w-fit md:pt-0 justify-center">
               <div className="hidden xl:flex items-center gap-x-5 mr-8">
-                <select className="text-gray-700 hover:text-gray-900 font-semibold cursor-pointer transition-all duration-300 outline-none">
+                <select className="text-gray-700 hover:text-gray-900 bg-transparent font-semibold cursor-pointer transition-all duration-300 outline-none">
                   <option value="categories">Categories</option>
                   <option value="explore">Explore</option>
                   <option value="trending">Trending</option>
@@ -131,12 +131,12 @@ const Header: FC = () => {
           onClick={(e) => e.stopPropagation()}
         >
           <div className="p-4 border border-t space-y-4">
-            <select className=" block text-black text-lg ml-7 hover:text-gray-900 font-semibold cursor-pointer transition-all duration-300 outline-none">
+            <select className=" block bg-white text-black text-lg ml-7 hover:text-gray-900 font-semibold cursor-pointer transition-all duration-300 outline-none">
               <option value="explore">Explore</option>
               <option value="categories">Categories</option>
               <option value="trending">Trending</option>
             </select>
-            <select className=" block text-black text-lg ml-7 hover:text-gray-900 font-semibold cursor-pointer transieion-all duration-300 outline-none px-0">
+            <select className=" block bg-white text-black text-lg ml-7 hover:text-gray-900 font-semibold cursor-pointer transieion-all duration-300 outline-none px-0">
               <option value="hire">Hire a Designer</option>
               <option value="freelancers">Freelancers</option>
               <option value="agencies">Agencies</option>
