@@ -1,1 +1,2 @@
-All tasks have been put in their respestive branches, each branch corresponding to a week, week-1, week-2 etc.
+Week 4 Day 6 Deployed link: https://clinquant-naiad-352514.netlify.app/
+
