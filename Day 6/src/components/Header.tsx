@@ -1,4 +1,4 @@
-import { FC, useState, useEffect, useRef } from "react";
+import { FC, useState, useRef } from "react";
 import { Link } from "react-scroll";
 
 const Header: FC = () => {
@@ -9,25 +9,25 @@ const Header: FC = () => {
     setIsDrawerOpen(!isDrawerOpen);
   };
 
-  const handleClickOutside = (event: MouseEvent) => {
-    if (
-      drawerRef.current &&
-      !drawerRef.current.contains(event.target as Node)
-    ) {
-      setIsDrawerOpen(false);
-    }
-  };
+  // const handleClickOutside = (event: MouseEvent) => {
+  //   if (
+  //     drawerRef.current &&
+  //     !drawerRef.current.contains(event.target as Node)
+  //   ) {
+  //     setIsDrawerOpen(false);
+  //   }
+  // };
 
-  useEffect(() => {
-    if (isDrawerOpen) {
-      document.addEventListener("mousedown", handleClickOutside);
-    } else {
-      document.removeEventListener("mousedown", handleClickOutside);
-    }
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
-  }, [isDrawerOpen]);
+  // useEffect(() => {
+  //   if (isDrawerOpen) {
+  //     document.addEventListener("mousedown", handleClickOutside);
+  //   } else {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   }
+  //   return () => {
+  //     document.removeEventListener("mousedown", handleClickOutside);
+  //   };
+  // }, [isDrawerOpen]);
 
   return (
     <nav className="w-full bg-white bg-opacity-50 backdrop-blur fixed top-0 z-50">
